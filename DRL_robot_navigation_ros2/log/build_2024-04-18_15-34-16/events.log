@@ -1,0 +1,1062 @@
+[0.000000] (-) TimerEvent: {}
+[0.001506] (td3) JobQueued: {'identifier': 'td3', 'dependencies': OrderedDict()}
+[0.001613] (velodyne_description) JobQueued: {'identifier': 'velodyne_description', 'dependencies': OrderedDict()}
+[0.001715] (velodyne_gazebo_plugins) JobQueued: {'identifier': 'velodyne_gazebo_plugins', 'dependencies': OrderedDict()}
+[0.001760] (velodyne_simulator) JobQueued: {'identifier': 'velodyne_simulator', 'dependencies': OrderedDict([('velodyne_description', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description'), ('velodyne_gazebo_plugins', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins')])}
+[0.001824] (velodyne_description) JobStarted: {'identifier': 'velodyne_description'}
+[0.013445] (velodyne_gazebo_plugins) JobStarted: {'identifier': 'velodyne_gazebo_plugins'}
+[0.019976] (td3) JobStarted: {'identifier': 'td3'}
+[0.027752] (velodyne_description) JobProgress: {'identifier': 'velodyne_description', 'progress': 'cmake'}
+[0.029176] (velodyne_description) Command: {'cmd': ['/usr/bin/cmake', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/src/velodyne_simulator/velodyne_description', '-DCMAKE_INSTALL_PREFIX=/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description'], 'cwd': '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'a'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/a'), ('OLDPWD', '/home/a/deep-rl-navigation'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1737'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'a'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'a'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/a/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/a-virtual-machine:@/tmp/.ICE-unix/1552,unix/a-virtual-machine:/tmp/.ICE-unix/1552'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d7f8e1dd_a74e_4c0f_8943_a9de10838216'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0IJSM2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.267'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble')]), 'shell': False}
+[0.034722] (velodyne_gazebo_plugins) JobProgress: {'identifier': 'velodyne_gazebo_plugins', 'progress': 'cmake'}
+[0.036910] (velodyne_gazebo_plugins) Command: {'cmd': ['/usr/bin/cmake', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/src/velodyne_simulator/velodyne_gazebo_plugins', '-DCMAKE_INSTALL_PREFIX=/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins'], 'cwd': '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_gazebo_plugins', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'a'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/a'), ('OLDPWD', '/home/a/deep-rl-navigation'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1737'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'a'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'a'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/a/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/a-virtual-machine:@/tmp/.ICE-unix/1552,unix/a-virtual-machine:/tmp/.ICE-unix/1552'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d7f8e1dd_a74e_4c0f_8943_a9de10838216'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0IJSM2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.267'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_gazebo_plugins'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble')]), 'shell': False}
+[0.048693] (td3) JobProgress: {'identifier': 'td3', 'progress': 'cmake'}
+[0.048777] (td3) Command: {'cmd': ['/usr/bin/cmake', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/src/td3', '-DCMAKE_INSTALL_PREFIX=/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3'], 'cwd': '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/td3', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'a'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/a'), ('OLDPWD', '/home/a/deep-rl-navigation'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1737'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'a'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'a'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/a/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/a-virtual-machine:@/tmp/.ICE-unix/1552,unix/a-virtual-machine:/tmp/.ICE-unix/1552'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d7f8e1dd_a74e_4c0f_8943_a9de10838216'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0IJSM2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.267'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/td3'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble')]), 'shell': False}
+[0.099897] (-) TimerEvent: {}
+[0.163477] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.170972] (velodyne_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.176856] (td3) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.200635] (-) TimerEvent: {}
+[0.286267] (velodyne_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.286680] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.301290] (td3) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.301948] (-) TimerEvent: {}
+[0.303310] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.303809] (velodyne_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.318278] (td3) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.402467] (-) TimerEvent: {}
+[0.471421] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.480900] (velodyne_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.483924] (td3) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.491627] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.492268] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.493239] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.498643] (velodyne_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.499314] (velodyne_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.500374] (td3) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.500921] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.501229] (td3) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.501371] (td3) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.502027] (velodyne_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.503167] (-) TimerEvent: {}
+[0.507300] (td3) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.508403] (velodyne_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.603614] (-) TimerEvent: {}
+[0.678596] (td3) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.679569] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.695005] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.695870] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.696999] (td3) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.697139] (td3) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.697238] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.699010] (td3) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.701561] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.701840] (velodyne_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.702712] (td3) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.704109] (-) TimerEvent: {}
+[0.717926] (velodyne_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.718560] (velodyne_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.719395] (velodyne_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.723900] (velodyne_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.804806] (-) TimerEvent: {}
+[0.905572] (-) TimerEvent: {}
+[0.988366] (td3) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.006227] (-) TimerEvent: {}
+[1.007349] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.015404] (velodyne_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.106791] (-) TimerEvent: {}
+[1.159739] (td3) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.170505] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found gazebo_dev: 3.7.0 (/opt/ros/humble/share/gazebo_dev/cmake)\n'}
+[1.185189] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[1.185935] (velodyne_description) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[1.187036] (velodyne_description) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.187445] (velodyne_description) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PkgConfig)\n'}
+[1.187620] (velodyne_description) StderrLine: {'line': b'  does not match the name of the calling package (gazebo).  This can lead to\n'}
+[1.187714] (velodyne_description) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.187802] (velodyne_description) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.187881] (velodyne_description) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.187957] (velodyne_description) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)\n'}
+[1.188034] (velodyne_description) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)\n'}
+[1.188107] (velodyne_description) StderrLine: {'line': b'  CMakeLists.txt:5 (find_package)\n'}
+[1.188178] (velodyne_description) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.188251] (velodyne_description) StderrLine: {'line': b'\x1b[0m\n'}
+[1.194121] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[1.195681] (velodyne_description) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[1.207173] (-) TimerEvent: {}
+[1.228671] (velodyne_description) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[1.232041] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[1.307988] (-) TimerEvent: {}
+[1.320459] (td3) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.380161] (td3) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.387702] (td3) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.391863] (td3) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.408504] (-) TimerEvent: {}
+[1.424328] (td3) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.427226] (td3) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.434396] (td3) StdoutLine: {'line': b'-- Generating done\n'}
+[1.436609] (td3) StdoutLine: {'line': b'-- Build files have been written to: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/td3\n'}
+[1.446358] (td3) CommandEnded: {'returncode': 0}
+[1.450549] (td3) JobProgress: {'identifier': 'td3', 'progress': 'build'}
+[1.450685] (td3) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/td3', '--', '-j8', '-l8'], 'cwd': '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/td3', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'a'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/a'), ('OLDPWD', '/home/a/deep-rl-navigation'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1737'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'a'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'a'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/a/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/a-virtual-machine:@/tmp/.ICE-unix/1552,unix/a-virtual-machine:/tmp/.ICE-unix/1552'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d7f8e1dd_a74e_4c0f_8943_a9de10838216'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0IJSM2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.267'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/td3'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble')]), 'shell': False}
+[1.509392] (-) TimerEvent: {}
+[1.515904] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[1.526306] (velodyne_description) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[1.543849] (td3) CommandEnded: {'returncode': 0}
+[1.608499] (td3) JobProgress: {'identifier': 'td3', 'progress': 'install'}
+[1.610113] (-) TimerEvent: {}
+[1.632542] (td3) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/td3'], 'cwd': '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/td3', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'a'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/a'), ('OLDPWD', '/home/a/deep-rl-navigation'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1737'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'a'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'a'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/a/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/a-virtual-machine:@/tmp/.ICE-unix/1552,unix/a-virtual-machine:/tmp/.ICE-unix/1552'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d7f8e1dd_a74e_4c0f_8943_a9de10838216'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0IJSM2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.267'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/td3'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble')]), 'shell': False}
+[1.652780] (td3) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.653610] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//launch\n'}
+[1.654377] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//launch/robot_state_publisher.launch.py\n'}
+[1.654667] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//launch/training_simulation.launch.py\n'}
+[1.654943] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//launch/multi_robot_scenario.launch.py\n'}
+[1.655104] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//launch/pioneer3dx.rviz\n'}
+[1.655401] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//launch/test_simulation.launch.py\n'}
+[1.655522] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models\n'}
+[1.655938] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot\n'}
+[1.656151] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description\n'}
+[1.657122] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/urdf\n'}
+[1.657515] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/urdf/example.urdf.xacro\n'}
+[1.657673] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/urdf/VLP-16.urdf.xacro\n'}
+[1.657812] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/urdf/HDL-32E.urdf.xacro\n'}
+[1.657955] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/urdf/VLP-32C.urdf.xacro\n'}
+[1.658082] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/world\n'}
+[1.658200] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/world/lio_sam.model\n'}
+[1.658324] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/world/example.world\n'}
+[1.658739] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/meshes\n'}
+[1.659119] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/meshes/VLP16_base_1.stl\n'}
+[1.659257] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/meshes/HDL32E_scan.dae\n'}
+[1.659389] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/meshes/VLP16_base_1.dae\n'}
+[1.660196] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/meshes/VLP16_scan.stl\n'}
+[1.660701] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/meshes/HDL32E_scan.stl\n'}
+[1.661413] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/meshes/HDL32E_base.dae\n'}
+[1.662448] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/meshes/VLP16_base_2.dae\n'}
+[1.663109] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/meshes/HDL32E_base.stl\n'}
+[1.663916] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/meshes/VLP16_scan.dae\n'}
+[1.664263] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/meshes/VLP16_base_2.stl\n'}
+[1.664913] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/CMakeLists.txt\n'}
+[1.665619] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/rviz\n'}
+[1.665916] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/rviz/example.rviz\n'}
+[1.666770] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/launch\n'}
+[1.666916] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/launch/example-launch.py\n'}
+[1.667660] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models\n'}
+[1.667782] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot\n'}
+[1.667873] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes\n'}
+[1.667979] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE\n'}
+[1.668160] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/wheel\n'}
+[1.668266] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/wheel/wheel_link.dae\n'}
+[1.670234] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[1.671219] (velodyne_description) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[1.673560] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/sensors\n'}
+[1.673870] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/sensors/camera\n'}
+[1.673956] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/sensors/camera/camera.dae\n'}
+[1.674639] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/sensors/gps\n'}
+[1.675110] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/sensors/gps/gps.dae\n'}
+[1.693909] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/sensors/gps/gps_texture.png\n'}
+[1.694782] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/sensors/gim30\n'}
+[1.694978] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/sensors/gim30/gim30.dae\n'}
+[1.707085] (velodyne_description) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[1.708625] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[1.710348] (-) TimerEvent: {}
+[1.767843] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/sensors/gim30/gim30_lrf_texture.png\n'}
+[1.769639] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/sensors/rear_lrf\n'}
+[1.769812] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/sensors/rear_lrf/rear_lrf.dae\n'}
+[1.773727] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/sensors/rear_lrf/urg_texture.png\n'}
+[1.774307] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/sensors/front_lrf\n'}
+[1.775335] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/sensors/front_lrf/lrf_texture.png\n'}
+[1.775521] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/sensors/front_lrf/front_lrf.dae\n'}
+[1.811104] (-) TimerEvent: {}
+[1.829181] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/suspension\n'}
+[1.829414] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/suspension/rear_right_link.dae\n'}
+[1.835410] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/suspension/rear_left_link.dae\n'}
+[1.842646] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/suspension/front_left_link.dae\n'}
+[1.846716] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/suspension/front_right_link.dae\n'}
+[1.853992] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/lidar_base\n'}
+[1.854639] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/lidar_base/YDlidar_base.dae\n'}
+[1.856324] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/base\n'}
+[1.856868] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/base/base_linkOLD.dae\n'}
+[1.889416] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/base/base_link.dae\n'}
+[1.911644] (-) TimerEvent: {}
+[1.922241] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/lidar_head\n'}
+[1.923021] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/DAE/lidar_head/YDlidar_head.dae\n'}
+[1.923328] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL\n'}
+[1.923921] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/wheel\n'}
+[1.924338] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/wheel/robot_wheel.stl\n'}
+[1.925007] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/sensors\n'}
+[1.925140] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/sensors/gps\n'}
+[1.925255] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/sensors/gps/gps.stl\n'}
+[1.931579] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/sensors/gim30\n'}
+[1.931829] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/sensors/gim30/gim30.stl\n'}
+[1.961452] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/sensors/rear_lrf\n'}
+[1.963420] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/sensors/rear_lrf/rear_lrf.stl\n'}
+[1.964043] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/sensors/front_lrf\n'}
+[1.964211] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/sensors/front_lrf/front_lrf.stl\n'}
+[1.982462] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/suspension\n'}
+[1.982764] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/suspension/FRONT_LEFT_LINKSTL.stl\n'}
+[1.986411] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/suspension/REAR_LEFT_LINKSTL.stl\n'}
+[1.986668] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/suspension/sus_link.stl\n'}
+[1.986825] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/suspension/FRONT_RIGHT_LINKSTL.stl\n'}
+[1.988301] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/suspension/REAR_RIGHT_LINKSTL.stl\n'}
+[1.991269] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/lidar_base\n'}
+[1.991484] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/lidar_base/YDlidar_base.stl\n'}
+[1.992381] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/base\n'}
+[1.992604] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/base/base_link_old.stl\n'}
+[1.996440] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/base/base_link.stl\n'}
+[1.996548] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/lidar_head\n'}
+[1.996644] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/meshes/STL/lidar_head/YDlidar_head v4.stl\n'}
+[1.996959] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/rs_robot.sdf\n'}
+[1.997030] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/models/rs_robot/model.config\n'}
+[1.998037] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/CHANGELOG.rst\n'}
+[1.998406] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/velodyne_description/package.xml\n'}
+[1.999800] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/meshes\n'}
+[2.000011] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/meshes/p3dx\n'}
+[2.000269] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/meshes/p3dx/back_sonar.stl\n'}
+[2.000919] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/meshes/p3dx/chassis.stl\n'}
+[2.002003] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/meshes/p3dx/right_hubcap.stl\n'}
+[2.002235] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/meshes/p3dx/center_hubcap.stl\n'}
+[2.002832] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/meshes/p3dx/right_wheel.stl\n'}
+[2.004011] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/meshes/p3dx/front_sonar.stl\n'}
+[2.004674] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/meshes/p3dx/front_rim.stl\n'}
+[2.006351] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/meshes/p3dx/center_wheel.stl\n'}
+[2.007170] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/meshes/p3dx/back_rim.stl\n'}
+[2.008866] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/meshes/p3dx/left_wheel.stl\n'}
+[2.009192] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/meshes/p3dx/Coordinates\n'}
+[2.009926] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/meshes/p3dx/left_hubcap.stl\n'}
+[2.010113] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/meshes/p3dx/swivel.stl\n'}
+[2.011518] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/meshes/p3dx/top.stl\n'}
+[2.011679] (-) TimerEvent: {}
+[2.012555] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/meshes/laser\n'}
+[2.014664] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/meshes/laser/hokuyo.dae\n'}
+[2.015817] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/td_robot.sdf\n'}
+[2.016040] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//models/td_robot/model.config\n'}
+[2.017086] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts\n'}
+[2.017248] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/train_velodyne_node.py\n'}
+[2.018202] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs\n'}
+[2.018435] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702123823.vish-ubuntu.94740.0\n'}
+[2.018603] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702122561.vish-ubuntu.87435.0\n'}
+[2.019179] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702131171.vish-ubuntu.117214.0\n'}
+[2.021562] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702132572.vish-ubuntu.126652.0\n'}
+[2.022120] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1680403642.robotmania-MINIPC-PA90.28717.0\n'}
+[2.022485] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702137020.vish-ubuntu.156802.0\n'}
+[2.022812] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702124053.vish-ubuntu.96522.0\n'}
+[2.023187] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702131595.vish-ubuntu.119269.0\n'}
+[2.023732] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702184852.vish-ubuntu.36208.0\n'}
+[2.023989] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702123764.vish-ubuntu.94011.0\n'}
+[2.024323] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702125273.vish-ubuntu.99081.0\n'}
+[2.024392] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702131321.vish-ubuntu.118058.0\n'}
+[2.024489] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702136732.vish-ubuntu.153900.0\n'}
+[2.024601] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702137062.vish-ubuntu.157123.0\n'}
+[2.024651] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702126383.vish-ubuntu.103611.0\n'}
+[2.025142] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702202681.vish-ubuntu.15652.0\n'}
+[2.026232] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702137346.vish-ubuntu.6235.0\n'}
+[2.028077] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702137512.vish-ubuntu.7361.0\n'}
+[2.029013] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702123347.vish-ubuntu.91291.0\n'}
+[2.029535] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702058311.vish-ubuntu.6923.0\n'}
+[2.029688] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702137093.vish-ubuntu.157388.0\n'}
+[2.029834] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702113129.vish-ubuntu.77727.0\n'}
+[2.030677] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702138457.vish-ubuntu.10243.0\n'}
+[2.030887] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702125781.vish-ubuntu.101690.0\n'}
+[2.031100] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702130035.vish-ubuntu.113818.0\n'}
+[2.031294] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702138081.vish-ubuntu.9118.0\n'}
+[2.031523] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702130924.vish-ubuntu.115595.0\n'}
+[2.031743] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1680403580.robotmania-MINIPC-PA90.28181.0\n'}
+[2.032677] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702125719.vish-ubuntu.101126.0\n'}
+[2.032752] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702125836.vish-ubuntu.102265.0\n'}
+[2.032801] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702127821.vish-ubuntu.107103.0\n'}
+[2.032844] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702129867.vish-ubuntu.113086.0\n'}
+[2.032885] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702131106.vish-ubuntu.116587.0\n'}
+[2.032945] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702129318.vish-ubuntu.110922.0\n'}
+[2.032985] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702196832.vish-ubuntu.9055.0\n'}
+[2.033068] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702138787.vish-ubuntu.11442.0\n'}
+[2.033191] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702207343.vish-ubuntu.18092.0\n'}
+[2.034161] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702127296.vish-ubuntu.105049.0\n'}
+[2.034372] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702122736.vish-ubuntu.88576.0\n'}
+[2.034809] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702143087.vish-ubuntu.15454.0\n'}
+[2.035012] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702112878.vish-ubuntu.76245.0\n'}
+[2.035866] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702125531.vish-ubuntu.100158.0\n'}
+[2.036191] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702137298.vish-ubuntu.5805.0\n'}
+[2.036410] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702126352.vish-ubuntu.103240.0\n'}
+[2.036762] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702135897.vish-ubuntu.147305.0\n'}
+[2.037333] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702123266.vish-ubuntu.90616.0\n'}
+[2.037905] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702132489.vish-ubuntu.125588.0\n'}
+[2.038236] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702113012.vish-ubuntu.77026.0\n'}
+[2.038865] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702137454.vish-ubuntu.6933.0\n'}
+[2.039221] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702132297.vish-ubuntu.124833.0\n'}
+[2.039399] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702127554.vish-ubuntu.106195.0\n'}
+[2.039646] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702123799.vish-ubuntu.94401.0\n'}
+[2.039860] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702127882.vish-ubuntu.107712.0\n'}
+[2.040861] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702125602.vish-ubuntu.100692.0\n'}
+[2.041048] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702131626.vish-ubuntu.119656.0\n'}
+[2.041316] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702123944.vish-ubuntu.95824.0\n'}
+[2.041968] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702123618.vish-ubuntu.93261.0\n'}
+[2.042137] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702123835.vish-ubuntu.95058.0\n'}
+[2.042497] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702131643.vish-ubuntu.119992.0\n'}
+[2.042646] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702129469.vish-ubuntu.111832.0\n'}
+[2.042879] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702122323.vish-ubuntu.86336.0\n'}
+[2.043499] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702132223.vish-ubuntu.122468.0\n'}
+[2.043740] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702143581.vish-ubuntu.17439.0\n'}
+[2.044204] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702128034.vish-ubuntu.108558.0\n'}
+[2.044375] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702102710.vish-ubuntu.66278.0\n'}
+[2.045244] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702112304.vish-ubuntu.75006.0\n'}
+[2.045503] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702136930.vish-ubuntu.154661.0\n'}
+[2.045792] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702123044.vish-ubuntu.89428.0\n'}
+[2.046086] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/runs/events.out.tfevents.1702141865.vish-ubuntu.13513.0\n'}
+[2.048023] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/pytorch_models\n'}
+[2.048168] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/pytorch_models/td3_velodyne_critic.pth\n'}
+[2.060982] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/pytorch_models/td3_velodyne_actor.pth\n'}
+[2.067547] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/replay_buffer.py\n'}
+[2.068286] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/results\n'}
+[2.068486] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/results/TD3_velodyne.npy\n'}
+[2.069098] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/results/td3_velodyne.npy\n'}
+[2.069369] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/test_velodyne_node.py\n'}
+[2.069523] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//scripts/point_cloud2.py\n'}
+[2.070269] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//urdf\n'}
+[2.070665] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//urdf/td_robot.urdf\n'}
+[2.070941] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//urdf/meshes\n'}
+[2.071282] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//urdf/meshes/p3dx\n'}
+[2.071447] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//urdf/meshes/p3dx/back_sonar.stl\n'}
+[2.071596] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//urdf/meshes/p3dx/chassis.stl\n'}
+[2.072506] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//urdf/meshes/p3dx/right_hubcap.stl\n'}
+[2.072718] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//urdf/meshes/p3dx/center_hubcap.stl\n'}
+[2.073134] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//urdf/meshes/p3dx/right_wheel.stl\n'}
+[2.073900] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//urdf/meshes/p3dx/front_sonar.stl\n'}
+[2.074056] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//urdf/meshes/p3dx/front_rim.stl\n'}
+[2.077140] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//urdf/meshes/p3dx/center_wheel.stl\n'}
+[2.077665] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//urdf/meshes/p3dx/back_rim.stl\n'}
+[2.081524] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//urdf/meshes/p3dx/left_wheel.stl\n'}
+[2.082246] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//urdf/meshes/p3dx/Coordinates\n'}
+[2.082731] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//urdf/meshes/p3dx/left_hubcap.stl\n'}
+[2.082905] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//urdf/meshes/p3dx/swivel.stl\n'}
+[2.083168] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//urdf/meshes/p3dx/top.stl\n'}
+[2.083923] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//urdf/meshes/laser\n'}
+[2.084159] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//urdf/meshes/laser/hokuyo.dae\n'}
+[2.084581] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//worlds\n'}
+[2.085289] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3//worlds/td3.world\n'}
+[2.085862] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/lib/td3/replay_buffer.py\n'}
+[2.086633] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/lib/td3/test_velodyne_node.py\n'}
+[2.086791] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/lib/td3/train_velodyne_node.py\n'}
+[2.087003] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/lib/td3/point_cloud2.py\n'}
+[2.087736] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/lib/td3/multi_robot_scenario.launch.py\n'}
+[2.090257] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/lib/td3/robot_state_publisher.launch.py\n'}
+[2.090517] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/lib/td3/training_simulation.launch.py\n'}
+[2.090925] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/lib/td3/test_simulation.launch.py\n'}
+[2.091100] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/lib/td3/pioneer3dx.rviz\n'}
+[2.091377] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/ament_index/resource_index/package_run_dependencies/td3\n'}
+[2.091841] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/ament_index/resource_index/parent_prefix_path/td3\n'}
+[2.092037] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3/environment/ament_prefix_path.sh\n'}
+[2.092414] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3/environment/ament_prefix_path.dsv\n'}
+[2.092695] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3/environment/path.sh\n'}
+[2.093330] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3/environment/path.dsv\n'}
+[2.093777] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3/local_setup.bash\n'}
+[2.095198] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3/local_setup.sh\n'}
+[2.095379] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3/local_setup.zsh\n'}
+[2.095575] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3/local_setup.dsv\n'}
+[2.095836] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3/package.dsv\n'}
+[2.095954] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/ament_index/resource_index/packages/td3\n'}
+[2.096830] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3/cmake/td3Config.cmake\n'}
+[2.097023] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3/cmake/td3Config-version.cmake\n'}
+[2.097169] (td3) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3/share/td3/package.xml\n'}
+[2.101359] (td3) CommandEnded: {'returncode': 0}
+[2.116600] (-) TimerEvent: {}
+[2.139028] (velodyne_description) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[2.145534] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[2.172646] (velodyne_description) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[2.181932] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[2.182722] (velodyne_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.191583] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.194672] (velodyne_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[2.200890] (velodyne_description) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[2.201435] (velodyne_description) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[2.204574] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[2.208514] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[2.211512] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[2.212867] (velodyne_description) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[2.217377] (-) TimerEvent: {}
+[2.219105] (td3) JobEnded: {'identifier': 'td3', 'rc': 0}
+[2.223343] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[2.252086] (velodyne_description) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[2.259380] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[2.317795] (-) TimerEvent: {}
+[2.343109] (velodyne_description) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[2.351582] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[2.367040] (velodyne_description) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[2.377644] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[2.385362] (velodyne_description) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[2.394232] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[2.396145] (velodyne_description) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[2.396378] (velodyne_description) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[2.404572] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[2.405602] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[2.407392] (velodyne_description) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[2.407599] (velodyne_description) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[2.415741] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[2.415983] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[2.418197] (-) TimerEvent: {}
+[2.419169] (velodyne_description) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[2.419365] (velodyne_description) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[2.426060] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[2.426285] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[2.427146] (velodyne_description) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[2.427339] (velodyne_description) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[2.435531] (velodyne_description) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[2.435750] (velodyne_description) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[2.435906] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[2.436199] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[2.443660] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[2.443893] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[2.444577] (velodyne_description) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[2.453855] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[2.518795] (-) TimerEvent: {}
+[2.619222] (-) TimerEvent: {}
+[2.677708] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.681546] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[2.682700] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[2.686837] (velodyne_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.691436] (velodyne_description) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[2.692626] (velodyne_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[2.719440] (-) TimerEvent: {}
+[2.723747] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[2.730002] (velodyne_description) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[2.746127] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[2.754491] (velodyne_description) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[2.758323] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[2.765598] (velodyne_description) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[2.799158] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[2.803373] (velodyne_description) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[2.819652] (-) TimerEvent: {}
+[2.908563] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[2.914766] (velodyne_description) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[2.920061] (-) TimerEvent: {}
+[2.923535] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[2.926601] (velodyne_description) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[2.960700] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[2.961622] (velodyne_description) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[3.020956] (-) TimerEvent: {}
+[3.048776] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[3.053131] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[3.054114] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[3.057833] (velodyne_description) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[3.060877] (velodyne_description) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[3.062308] (velodyne_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[3.094629] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.101934] (velodyne_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.105136] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[3.113992] (velodyne_description) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[3.121212] (-) TimerEvent: {}
+[3.139963] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[3.147660] (velodyne_description) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[3.221778] (-) TimerEvent: {}
+[3.232915] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[3.237064] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[3.238044] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[3.238202] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[3.239776] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[3.242886] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[3.246119] (velodyne_description) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[3.250879] (velodyne_description) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[3.252014] (velodyne_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[3.252722] (velodyne_description) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[3.254511] (velodyne_description) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[3.257712] (velodyne_description) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[3.266596] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[3.267617] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[3.271488] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[3.272501] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[3.273085] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.278999] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[3.279806] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[3.281528] (velodyne_description) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[3.282663] (velodyne_description) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[3.288022] (velodyne_description) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[3.289286] (velodyne_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[3.289954] (velodyne_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.295022] (velodyne_description) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[3.295927] (velodyne_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[3.322492] (-) TimerEvent: {}
+[3.423137] (-) TimerEvent: {}
+[3.484407] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[3.502127] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[3.502374] (velodyne_description) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[3.521144] (velodyne_description) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[3.523896] (-) TimerEvent: {}
+[3.539172] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[3.562196] (velodyne_description) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[3.624317] (-) TimerEvent: {}
+[3.633155] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[3.648567] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[3.660229] (velodyne_description) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[3.678224] (velodyne_description) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[3.686229] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[3.717740] (velodyne_description) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[3.724503] (-) TimerEvent: {}
+[3.789583] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[3.790409] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[3.791388] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.792647] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[3.799428] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[3.800044] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[3.811520] (velodyne_description) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[3.813282] (velodyne_description) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[3.814367] (velodyne_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.815439] (velodyne_description) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[3.824576] (velodyne_description) StdoutLine: {'line': b'-- Found gazebo_ros_pkgs: 3.7.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)\n'}
+[3.824862] (-) TimerEvent: {}
+[3.836324] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[3.925180] (-) TimerEvent: {}
+[3.936405] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[3.940355] (velodyne_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.953861] (velodyne_description) StdoutLine: {'line': b'-- Generating done\n'}
+[3.958461] (velodyne_description) StdoutLine: {'line': b'-- Build files have been written to: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_description\n'}
+[3.985467] (velodyne_description) CommandEnded: {'returncode': 0}
+[3.990415] (velodyne_description) JobProgress: {'identifier': 'velodyne_description', 'progress': 'build'}
+[3.990542] (velodyne_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_description', '--', '-j8', '-l8'], 'cwd': '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'a'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/a'), ('OLDPWD', '/home/a/deep-rl-navigation'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1737'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'a'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'a'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/a/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/a-virtual-machine:@/tmp/.ICE-unix/1552,unix/a-virtual-machine:/tmp/.ICE-unix/1552'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d7f8e1dd_a74e_4c0f_8943_a9de10838216'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0IJSM2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.267'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble')]), 'shell': False}
+[4.023866] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.025568] (-) TimerEvent: {}
+[4.037026] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.055591] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.088442] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.112688] (velodyne_description) CommandEnded: {'returncode': 0}
+[4.125897] (-) TimerEvent: {}
+[4.130858] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.170390] (velodyne_description) JobProgress: {'identifier': 'velodyne_description', 'progress': 'install'}
+[4.171008] (velodyne_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_description'], 'cwd': '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'a'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/a'), ('OLDPWD', '/home/a/deep-rl-navigation'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1737'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'a'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'a'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/a/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/a-virtual-machine:@/tmp/.ICE-unix/1552,unix/a-virtual-machine:/tmp/.ICE-unix/1552'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d7f8e1dd_a74e_4c0f_8943_a9de10838216'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0IJSM2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.267'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble')]), 'shell': False}
+[4.186356] (velodyne_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.187318] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/ament_index/resource_index/package_run_dependencies/velodyne_description\n'}
+[4.187610] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/ament_index/resource_index/parent_prefix_path/velodyne_description\n'}
+[4.188156] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/environment/ament_prefix_path.sh\n'}
+[4.188524] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/environment/ament_prefix_path.dsv\n'}
+[4.189566] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/environment/path.sh\n'}
+[4.189957] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/environment/path.dsv\n'}
+[4.190704] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/local_setup.bash\n'}
+[4.190887] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/local_setup.sh\n'}
+[4.191149] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/local_setup.zsh\n'}
+[4.191372] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/local_setup.dsv\n'}
+[4.191769] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/package.dsv\n'}
+[4.192121] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/ament_index/resource_index/packages/velodyne_description\n'}
+[4.194694] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.195070] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/cmake/velodyne_descriptionConfig.cmake\n'}
+[4.195203] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/cmake/velodyne_descriptionConfig-version.cmake\n'}
+[4.195252] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/package.xml\n'}
+[4.195640] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/launch\n'}
+[4.195856] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/launch/example-launch.py\n'}
+[4.195994] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/meshes\n'}
+[4.196100] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_1.stl\n'}
+[4.197012] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/meshes/HDL32E_scan.dae\n'}
+[4.197174] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_1.dae\n'}
+[4.197346] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/meshes/VLP16_scan.stl\n'}
+[4.197657] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/meshes/HDL32E_scan.stl\n'}
+[4.197834] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/meshes/HDL32E_base.dae\n'}
+[4.198188] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_2.dae\n'}
+[4.198963] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/meshes/HDL32E_base.stl\n'}
+[4.199557] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/meshes/VLP16_scan.dae\n'}
+[4.200052] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_2.stl\n'}
+[4.200670] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/rviz\n'}
+[4.200980] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/rviz/example.rviz\n'}
+[4.201429] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/urdf\n'}
+[4.202450] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/urdf/example.urdf.xacro\n'}
+[4.203352] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/urdf/VLP-16.urdf.xacro\n'}
+[4.203731] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/urdf/HDL-32E.urdf.xacro\n'}
+[4.204011] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/urdf/VLP-32C.urdf.xacro\n'}
+[4.204397] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/world\n'}
+[4.204735] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/world/lio_sam.model\n'}
+[4.205200] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/world/example.world\n'}
+[4.205394] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models\n'}
+[4.205845] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot\n'}
+[4.206254] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes\n'}
+[4.206607] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE\n'}
+[4.206744] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/wheel\n'}
+[4.206946] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/wheel/wheel_link.dae\n'}
+[4.212754] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors\n'}
+[4.213458] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/camera\n'}
+[4.213661] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/camera/camera.dae\n'}
+[4.213942] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/gps\n'}
+[4.214234] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/gps/gps.dae\n'}
+[4.226515] (-) TimerEvent: {}
+[4.233672] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/gps/gps_texture.png\n'}
+[4.234237] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/gim30\n'}
+[4.234583] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/gim30/gim30.dae\n'}
+[4.275198] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.280444] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.306445] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/gim30/gim30_lrf_texture.png\n'}
+[4.306890] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/rear_lrf\n'}
+[4.307054] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/rear_lrf/rear_lrf.dae\n'}
+[4.312098] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/rear_lrf/urg_texture.png\n'}
+[4.312623] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/front_lrf\n'}
+[4.313108] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/front_lrf/lrf_texture.png\n'}
+[4.313432] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/front_lrf/front_lrf.dae\n'}
+[4.327300] (-) TimerEvent: {}
+[4.369430] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/suspension\n'}
+[4.370051] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/suspension/rear_right_link.dae\n'}
+[4.377897] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/suspension/rear_left_link.dae\n'}
+[4.385758] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/suspension/front_left_link.dae\n'}
+[4.393611] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/suspension/front_right_link.dae\n'}
+[4.400161] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/lidar_base\n'}
+[4.400624] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/lidar_base/YDlidar_base.dae\n'}
+[4.402846] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/base\n'}
+[4.403208] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/base/base_linkOLD.dae\n'}
+[4.427537] (-) TimerEvent: {}
+[4.435685] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/base/base_link.dae\n'}
+[4.467706] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/lidar_head\n'}
+[4.468172] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/lidar_head/YDlidar_head.dae\n'}
+[4.468943] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL\n'}
+[4.469550] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/wheel\n'}
+[4.469747] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/wheel/robot_wheel.stl\n'}
+[4.470200] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/sensors\n'}
+[4.470593] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/sensors/gps\n'}
+[4.470736] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/sensors/gps/gps.stl\n'}
+[4.476423] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/sensors/gim30\n'}
+[4.477049] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/sensors/gim30/gim30.stl\n'}
+[4.505045] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/sensors/rear_lrf\n'}
+[4.505474] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/sensors/rear_lrf/rear_lrf.stl\n'}
+[4.506951] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/sensors/front_lrf\n'}
+[4.507390] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/sensors/front_lrf/front_lrf.stl\n'}
+[4.526358] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/suspension\n'}
+[4.526890] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/suspension/FRONT_LEFT_LINKSTL.stl\n'}
+[4.527979] (-) TimerEvent: {}
+[4.528647] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/suspension/REAR_LEFT_LINKSTL.stl\n'}
+[4.530654] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/suspension/sus_link.stl\n'}
+[4.531040] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/suspension/FRONT_RIGHT_LINKSTL.stl\n'}
+[4.533041] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/suspension/REAR_RIGHT_LINKSTL.stl\n'}
+[4.534724] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/lidar_base\n'}
+[4.535059] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/lidar_base/YDlidar_base.stl\n'}
+[4.537059] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/base\n'}
+[4.537215] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/base/base_link_old.stl\n'}
+[4.539412] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.541155] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/base/base_link.stl\n'}
+[4.541451] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/lidar_head\n'}
+[4.541564] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/lidar_head/YDlidar_head v4.stl\n'}
+[4.542056] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/rs_robot.sdf\n'}
+[4.542546] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description/share/velodyne_description/models/rs_robot/model.config\n'}
+[4.548065] (velodyne_description) CommandEnded: {'returncode': 0}
+[4.600604] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[4.628361] (-) TimerEvent: {}
+[4.649658] (velodyne_description) JobEnded: {'identifier': 'velodyne_description', 'rc': 0}
+[4.707805] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.727001] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.728691] (-) TimerEvent: {}
+[4.829355] (-) TimerEvent: {}
+[4.929920] (-) TimerEvent: {}
+[5.030907] (-) TimerEvent: {}
+[5.052794] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found gazebo_msgs: 3.7.0 (/opt/ros/humble/share/gazebo_msgs/cmake)\n'}
+[5.131332] (-) TimerEvent: {}
+[5.231850] (-) TimerEvent: {}
+[5.333059] (-) TimerEvent: {}
+[5.433823] (-) TimerEvent: {}
+[5.509003] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[5.534042] (-) TimerEvent: {}
+[5.634928] (-) TimerEvent: {}
+[5.662586] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found tf2: 0.25.6 (/opt/ros/humble/share/tf2/cmake)\n'}
+[5.735307] (-) TimerEvent: {}
+[5.835791] (-) TimerEvent: {}
+[5.857539] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.916528] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Generating done\n'}
+[5.921296] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Build files have been written to: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_gazebo_plugins\n'}
+[5.936331] (-) TimerEvent: {}
+[5.944887] (velodyne_gazebo_plugins) CommandEnded: {'returncode': 0}
+[5.946983] (velodyne_gazebo_plugins) JobProgress: {'identifier': 'velodyne_gazebo_plugins', 'progress': 'build'}
+[5.949920] (velodyne_gazebo_plugins) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_gazebo_plugins', '--', '-j8', '-l8'], 'cwd': '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_gazebo_plugins', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'a'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/a'), ('OLDPWD', '/home/a/deep-rl-navigation'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1737'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'a'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'a'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/a/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/a-virtual-machine:@/tmp/.ICE-unix/1552,unix/a-virtual-machine:/tmp/.ICE-unix/1552'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d7f8e1dd_a74e_4c0f_8943_a9de10838216'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0IJSM2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.267'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_gazebo_plugins'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble')]), 'shell': False}
+[6.036871] (-) TimerEvent: {}
+[6.075498] (velodyne_gazebo_plugins) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/gazebo_ros_velodyne_laser.dir/src/GazeboRosVelodyneLaser.cpp.o\x1b[0m\n'}
+[6.137068] (-) TimerEvent: {}
+[6.237967] (-) TimerEvent: {}
+[6.339160] (-) TimerEvent: {}
+[6.440279] (-) TimerEvent: {}
+[6.540978] (-) TimerEvent: {}
+[6.641779] (-) TimerEvent: {}
+[6.742654] (-) TimerEvent: {}
+[6.843579] (-) TimerEvent: {}
+[6.944444] (-) TimerEvent: {}
+[7.045659] (-) TimerEvent: {}
+[7.146212] (-) TimerEvent: {}
+[7.247089] (-) TimerEvent: {}
+[7.347800] (-) TimerEvent: {}
+[7.448526] (-) TimerEvent: {}
+[7.549259] (-) TimerEvent: {}
+[7.650120] (-) TimerEvent: {}
+[7.750644] (-) TimerEvent: {}
+[7.851596] (-) TimerEvent: {}
+[7.952420] (-) TimerEvent: {}
+[8.053471] (-) TimerEvent: {}
+[8.154101] (-) TimerEvent: {}
+[8.255226] (-) TimerEvent: {}
+[8.355954] (-) TimerEvent: {}
+[8.456501] (-) TimerEvent: {}
+[8.557207] (-) TimerEvent: {}
+[8.658437] (-) TimerEvent: {}
+[8.759058] (-) TimerEvent: {}
+[8.859694] (-) TimerEvent: {}
+[8.960254] (-) TimerEvent: {}
+[9.061445] (-) TimerEvent: {}
+[9.162629] (-) TimerEvent: {}
+[9.263508] (-) TimerEvent: {}
+[9.364419] (-) TimerEvent: {}
+[9.465164] (-) TimerEvent: {}
+[9.566171] (-) TimerEvent: {}
+[9.666933] (-) TimerEvent: {}
+[9.767473] (-) TimerEvent: {}
+[9.868206] (-) TimerEvent: {}
+[9.968913] (-) TimerEvent: {}
+[10.069984] (-) TimerEvent: {}
+[10.171064] (-) TimerEvent: {}
+[10.272044] (-) TimerEvent: {}
+[10.372900] (-) TimerEvent: {}
+[10.473665] (-) TimerEvent: {}
+[10.574225] (-) TimerEvent: {}
+[10.675045] (-) TimerEvent: {}
+[10.776095] (-) TimerEvent: {}
+[10.877201] (-) TimerEvent: {}
+[10.978352] (-) TimerEvent: {}
+[11.079462] (-) TimerEvent: {}
+[11.180642] (-) TimerEvent: {}
+[11.281527] (-) TimerEvent: {}
+[11.382213] (-) TimerEvent: {}
+[11.482884] (-) TimerEvent: {}
+[11.583600] (-) TimerEvent: {}
+[11.684175] (-) TimerEvent: {}
+[11.784996] (-) TimerEvent: {}
+[11.885936] (-) TimerEvent: {}
+[11.986967] (-) TimerEvent: {}
+[12.087959] (-) TimerEvent: {}
+[12.188991] (-) TimerEvent: {}
+[12.289560] (-) TimerEvent: {}
+[12.390212] (-) TimerEvent: {}
+[12.490981] (-) TimerEvent: {}
+[12.591902] (-) TimerEvent: {}
+[12.692523] (-) TimerEvent: {}
+[12.793202] (-) TimerEvent: {}
+[12.894003] (-) TimerEvent: {}
+[12.994712] (-) TimerEvent: {}
+[13.095508] (-) TimerEvent: {}
+[13.196535] (-) TimerEvent: {}
+[13.297179] (-) TimerEvent: {}
+[13.397875] (-) TimerEvent: {}
+[13.499031] (-) TimerEvent: {}
+[13.600203] (-) TimerEvent: {}
+[13.701059] (-) TimerEvent: {}
+[13.802003] (-) TimerEvent: {}
+[13.902679] (-) TimerEvent: {}
+[14.003236] (-) TimerEvent: {}
+[14.104081] (-) TimerEvent: {}
+[14.204790] (-) TimerEvent: {}
+[14.305329] (-) TimerEvent: {}
+[14.406255] (-) TimerEvent: {}
+[14.507300] (-) TimerEvent: {}
+[14.607890] (-) TimerEvent: {}
+[14.709044] (-) TimerEvent: {}
+[14.809873] (-) TimerEvent: {}
+[14.911055] (-) TimerEvent: {}
+[15.011613] (-) TimerEvent: {}
+[15.112565] (-) TimerEvent: {}
+[15.213258] (-) TimerEvent: {}
+[15.313993] (-) TimerEvent: {}
+[15.414902] (-) TimerEvent: {}
+[15.515558] (-) TimerEvent: {}
+[15.616054] (-) TimerEvent: {}
+[15.716937] (-) TimerEvent: {}
+[15.817530] (-) TimerEvent: {}
+[15.918326] (-) TimerEvent: {}
+[16.019050] (-) TimerEvent: {}
+[16.119559] (-) TimerEvent: {}
+[16.220242] (-) TimerEvent: {}
+[16.321379] (-) TimerEvent: {}
+[16.421988] (-) TimerEvent: {}
+[16.523087] (-) TimerEvent: {}
+[16.624548] (-) TimerEvent: {}
+[16.725471] (-) TimerEvent: {}
+[16.826107] (-) TimerEvent: {}
+[16.926766] (-) TimerEvent: {}
+[17.027800] (-) TimerEvent: {}
+[17.128707] (-) TimerEvent: {}
+[17.229650] (-) TimerEvent: {}
+[17.330327] (-) TimerEvent: {}
+[17.431076] (-) TimerEvent: {}
+[17.531787] (-) TimerEvent: {}
+[17.632622] (-) TimerEvent: {}
+[17.733263] (-) TimerEvent: {}
+[17.834084] (-) TimerEvent: {}
+[17.934906] (-) TimerEvent: {}
+[18.035747] (-) TimerEvent: {}
+[18.136885] (-) TimerEvent: {}
+[18.237462] (-) TimerEvent: {}
+[18.338134] (-) TimerEvent: {}
+[18.439077] (-) TimerEvent: {}
+[18.539551] (-) TimerEvent: {}
+[18.640491] (-) TimerEvent: {}
+[18.741954] (-) TimerEvent: {}
+[18.842640] (-) TimerEvent: {}
+[18.943421] (-) TimerEvent: {}
+[19.044129] (-) TimerEvent: {}
+[19.145200] (-) TimerEvent: {}
+[19.246399] (-) TimerEvent: {}
+[19.347256] (-) TimerEvent: {}
+[19.448173] (-) TimerEvent: {}
+[19.548768] (-) TimerEvent: {}
+[19.649541] (-) TimerEvent: {}
+[19.750589] (-) TimerEvent: {}
+[19.851451] (-) TimerEvent: {}
+[19.952534] (-) TimerEvent: {}
+[20.053469] (-) TimerEvent: {}
+[20.154103] (-) TimerEvent: {}
+[20.254923] (-) TimerEvent: {}
+[20.355643] (-) TimerEvent: {}
+[20.456312] (-) TimerEvent: {}
+[20.556720] (-) TimerEvent: {}
+[20.657252] (-) TimerEvent: {}
+[20.758122] (-) TimerEvent: {}
+[20.858916] (-) TimerEvent: {}
+[20.959823] (-) TimerEvent: {}
+[21.060798] (-) TimerEvent: {}
+[21.161769] (-) TimerEvent: {}
+[21.262604] (-) TimerEvent: {}
+[21.363723] (-) TimerEvent: {}
+[21.464980] (-) TimerEvent: {}
+[21.565606] (-) TimerEvent: {}
+[21.666546] (-) TimerEvent: {}
+[21.767534] (-) TimerEvent: {}
+[21.868480] (-) TimerEvent: {}
+[21.969151] (-) TimerEvent: {}
+[22.070008] (-) TimerEvent: {}
+[22.170834] (-) TimerEvent: {}
+[22.271640] (-) TimerEvent: {}
+[22.372532] (-) TimerEvent: {}
+[22.473264] (-) TimerEvent: {}
+[22.573985] (-) TimerEvent: {}
+[22.674591] (-) TimerEvent: {}
+[22.775471] (-) TimerEvent: {}
+[22.876579] (-) TimerEvent: {}
+[22.977231] (-) TimerEvent: {}
+[23.078021] (-) TimerEvent: {}
+[23.178905] (-) TimerEvent: {}
+[23.279820] (-) TimerEvent: {}
+[23.380633] (-) TimerEvent: {}
+[23.481455] (-) TimerEvent: {}
+[23.582427] (-) TimerEvent: {}
+[23.683467] (-) TimerEvent: {}
+[23.784017] (-) TimerEvent: {}
+[23.885050] (-) TimerEvent: {}
+[23.985899] (-) TimerEvent: {}
+[24.002786] (velodyne_gazebo_plugins) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[24.003041] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[24.003108] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[24.003153] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[24.003193] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[24.003232] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[24.003270] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[24.003306] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[24.003362] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[24.003436] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[24.003555] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[24.003675] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/gazebo_ros/node.hpp:18\x1b[m\x1b[K,\n'}
+[24.003824] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/src/velodyne_simulator/velodyne_gazebo_plugins/include/velodyne_gazebo_plugins/GazeboRosVelodyneLaser.h:53\x1b[m\x1b[K,\n'}
+[24.003939] (velodyne_gazebo_plugins) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/src/velodyne_simulator/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp:35\x1b[m\x1b[K:\n'}
+[24.004020] (velodyne_gazebo_plugins) StderrLine: {'line': b'\x1b[01m\x1b[K/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/src/velodyne_simulator/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void gazebo::GazeboRosVelodyneLaser::Load(gazebo::sensors::SensorPtr, sdf::v9::ElementPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.004098] (velodyne_gazebo_plugins) StderrLine: {'line': b'\x1b[01m\x1b[K/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/src/velodyne_simulator/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp:295:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 expects a matching \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99 argument [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[24.004213] (velodyne_gazebo_plugins) StderrLine: {'line': b'  295 |   RCLCPP_INFO(ros_node_->get_logger(), \x1b[01;35m\x1b[K"Velodyne %slaser plugin ready"\x1b[m\x1b[K);\n'}
+[24.004288] (velodyne_gazebo_plugins) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.004361] (velodyne_gazebo_plugins) StderrLine: {'line': b'\x1b[01m\x1b[K/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/src/velodyne_simulator/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp:295:51:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[24.004501] (velodyne_gazebo_plugins) StderrLine: {'line': b'  295 |   RCLCPP_INFO(ros_node_->get_logger(), "Velodyne \x1b[01;36m\x1b[K%s\x1b[m\x1b[Klaser plugin ready");\n'}
+[24.004649] (velodyne_gazebo_plugins) StderrLine: {'line': b'      |                                                  \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[24.004777] (velodyne_gazebo_plugins) StderrLine: {'line': b'      |                                                   \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[24.005121] (velodyne_gazebo_plugins) StderrLine: {'line': b'      |                                                   \x1b[01;36m\x1b[Kchar*\x1b[m\x1b[K\n'}
+[24.086426] (-) TimerEvent: {}
+[24.187509] (-) TimerEvent: {}
+[24.288656] (-) TimerEvent: {}
+[24.389758] (-) TimerEvent: {}
+[24.490712] (-) TimerEvent: {}
+[24.591520] (-) TimerEvent: {}
+[24.692510] (-) TimerEvent: {}
+[24.793177] (-) TimerEvent: {}
+[24.893809] (-) TimerEvent: {}
+[24.994555] (-) TimerEvent: {}
+[25.095400] (-) TimerEvent: {}
+[25.196168] (-) TimerEvent: {}
+[25.296622] (-) TimerEvent: {}
+[25.397470] (-) TimerEvent: {}
+[25.497927] (-) TimerEvent: {}
+[25.598681] (-) TimerEvent: {}
+[25.700045] (-) TimerEvent: {}
+[25.801533] (-) TimerEvent: {}
+[25.902504] (-) TimerEvent: {}
+[26.003225] (-) TimerEvent: {}
+[26.103925] (-) TimerEvent: {}
+[26.204773] (-) TimerEvent: {}
+[26.305433] (-) TimerEvent: {}
+[26.406498] (-) TimerEvent: {}
+[26.507428] (-) TimerEvent: {}
+[26.608196] (-) TimerEvent: {}
+[26.708794] (-) TimerEvent: {}
+[26.809772] (-) TimerEvent: {}
+[26.910439] (-) TimerEvent: {}
+[27.011109] (-) TimerEvent: {}
+[27.112157] (-) TimerEvent: {}
+[27.212964] (-) TimerEvent: {}
+[27.313450] (-) TimerEvent: {}
+[27.414318] (-) TimerEvent: {}
+[27.515176] (-) TimerEvent: {}
+[27.615984] (-) TimerEvent: {}
+[27.716778] (-) TimerEvent: {}
+[27.817950] (-) TimerEvent: {}
+[27.918809] (-) TimerEvent: {}
+[28.019566] (-) TimerEvent: {}
+[28.120088] (-) TimerEvent: {}
+[28.220957] (-) TimerEvent: {}
+[28.322088] (-) TimerEvent: {}
+[28.423143] (-) TimerEvent: {}
+[28.524061] (-) TimerEvent: {}
+[28.624773] (-) TimerEvent: {}
+[28.725259] (-) TimerEvent: {}
+[28.825928] (-) TimerEvent: {}
+[28.926855] (-) TimerEvent: {}
+[29.027886] (-) TimerEvent: {}
+[29.128965] (-) TimerEvent: {}
+[29.230293] (-) TimerEvent: {}
+[29.330883] (-) TimerEvent: {}
+[29.431556] (-) TimerEvent: {}
+[29.532284] (-) TimerEvent: {}
+[29.632858] (-) TimerEvent: {}
+[29.733490] (-) TimerEvent: {}
+[29.834451] (-) TimerEvent: {}
+[29.935213] (-) TimerEvent: {}
+[30.036007] (-) TimerEvent: {}
+[30.137370] (-) TimerEvent: {}
+[30.238239] (-) TimerEvent: {}
+[30.339093] (-) TimerEvent: {}
+[30.439941] (-) TimerEvent: {}
+[30.540925] (-) TimerEvent: {}
+[30.641558] (-) TimerEvent: {}
+[30.742394] (-) TimerEvent: {}
+[30.843233] (-) TimerEvent: {}
+[30.943808] (-) TimerEvent: {}
+[31.045004] (-) TimerEvent: {}
+[31.145982] (-) TimerEvent: {}
+[31.246662] (-) TimerEvent: {}
+[31.347628] (-) TimerEvent: {}
+[31.448542] (-) TimerEvent: {}
+[31.549603] (-) TimerEvent: {}
+[31.650357] (-) TimerEvent: {}
+[31.751617] (-) TimerEvent: {}
+[31.852530] (-) TimerEvent: {}
+[31.953267] (-) TimerEvent: {}
+[32.053883] (-) TimerEvent: {}
+[32.154842] (-) TimerEvent: {}
+[32.255581] (-) TimerEvent: {}
+[32.356624] (-) TimerEvent: {}
+[32.458010] (-) TimerEvent: {}
+[32.559104] (-) TimerEvent: {}
+[32.659802] (-) TimerEvent: {}
+[32.760493] (-) TimerEvent: {}
+[32.861099] (-) TimerEvent: {}
+[32.961851] (-) TimerEvent: {}
+[33.062586] (-) TimerEvent: {}
+[33.163282] (-) TimerEvent: {}
+[33.264002] (-) TimerEvent: {}
+[33.364561] (-) TimerEvent: {}
+[33.465461] (-) TimerEvent: {}
+[33.566242] (-) TimerEvent: {}
+[33.667197] (-) TimerEvent: {}
+[33.699899] (velodyne_gazebo_plugins) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libgazebo_ros_velodyne_laser.so\x1b[0m\n'}
+[33.767496] (-) TimerEvent: {}
+[33.868063] (-) TimerEvent: {}
+[33.969005] (-) TimerEvent: {}
+[34.070220] (-) TimerEvent: {}
+[34.171060] (-) TimerEvent: {}
+[34.271977] (-) TimerEvent: {}
+[34.372904] (-) TimerEvent: {}
+[34.473890] (-) TimerEvent: {}
+[34.574639] (-) TimerEvent: {}
+[34.675084] (-) TimerEvent: {}
+[34.739829] (velodyne_gazebo_plugins) StdoutLine: {'line': b'[100%] Built target gazebo_ros_velodyne_laser\n'}
+[34.768751] (velodyne_gazebo_plugins) CommandEnded: {'returncode': 0}
+[34.775300] (-) TimerEvent: {}
+[34.847264] (velodyne_gazebo_plugins) JobProgress: {'identifier': 'velodyne_gazebo_plugins', 'progress': 'install'}
+[34.850024] (velodyne_gazebo_plugins) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_gazebo_plugins'], 'cwd': '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_gazebo_plugins', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'a'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/a'), ('OLDPWD', '/home/a/deep-rl-navigation'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1737'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'a'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'a'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/a/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/a-virtual-machine:@/tmp/.ICE-unix/1552,unix/a-virtual-machine:/tmp/.ICE-unix/1552'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d7f8e1dd_a74e_4c0f_8943_a9de10838216'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0IJSM2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.267'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_gazebo_plugins'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble')]), 'shell': False}
+[34.864211] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[34.864396] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/library_path.sh\n'}
+[34.865015] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/library_path.dsv\n'}
+[34.865689] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/share/ament_index/resource_index/package_run_dependencies/velodyne_gazebo_plugins\n'}
+[34.865875] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/share/ament_index/resource_index/parent_prefix_path/velodyne_gazebo_plugins\n'}
+[34.866097] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/ament_prefix_path.sh\n'}
+[34.866520] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/ament_prefix_path.dsv\n'}
+[34.866676] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/path.sh\n'}
+[34.867071] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/path.dsv\n'}
+[34.867162] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/local_setup.bash\n'}
+[34.867624] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/local_setup.sh\n'}
+[34.868459] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/local_setup.zsh\n'}
+[34.868673] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/local_setup.dsv\n'}
+[34.869519] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/package.dsv\n'}
+[34.869889] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/share/ament_index/resource_index/packages/velodyne_gazebo_plugins\n'}
+[34.870045] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[34.870444] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[34.870678] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[34.870857] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/velodyne_gazebo_pluginsConfig.cmake\n'}
+[34.871257] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/velodyne_gazebo_pluginsConfig-version.cmake\n'}
+[34.871473] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/package.xml\n'}
+[34.871630] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/include\n'}
+[34.871753] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/include/velodyne_gazebo_plugins\n'}
+[34.871978] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/include/velodyne_gazebo_plugins/GazeboRosVelodyneLaser.h\n'}
+[34.872031] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/lib/libgazebo_ros_velodyne_laser.so\n'}
+[34.876063] (-) TimerEvent: {}
+[34.881006] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Set runtime path of "/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/lib/libgazebo_ros_velodyne_laser.so" to ""\n'}
+[34.886595] (velodyne_gazebo_plugins) CommandEnded: {'returncode': 0}
+[34.976784] (-) TimerEvent: {}
+[34.999389] (velodyne_gazebo_plugins) JobEnded: {'identifier': 'velodyne_gazebo_plugins', 'rc': 0}
+[35.001015] (velodyne_simulator) JobStarted: {'identifier': 'velodyne_simulator'}
+[35.019606] (velodyne_simulator) JobProgress: {'identifier': 'velodyne_simulator', 'progress': 'cmake'}
+[35.021633] (velodyne_simulator) Command: {'cmd': ['/usr/bin/cmake', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/src/velodyne_simulator/velodyne_simulator', '-DCMAKE_INSTALL_PREFIX=/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator'], 'cwd': '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_simulator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'a'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/a'), ('OLDPWD', '/home/a/deep-rl-navigation'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1737'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'a'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'a'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/a/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/a-virtual-machine:@/tmp/.ICE-unix/1552,unix/a-virtual-machine:/tmp/.ICE-unix/1552'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d7f8e1dd_a74e_4c0f_8943_a9de10838216'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0IJSM2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.267'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_simulator'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble')]), 'shell': False}
+[35.077553] (-) TimerEvent: {}
+[35.136433] (velodyne_simulator) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[35.178061] (-) TimerEvent: {}
+[35.248697] (velodyne_simulator) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[35.262935] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[35.278804] (-) TimerEvent: {}
+[35.379714] (-) TimerEvent: {}
+[35.413568] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[35.425561] (velodyne_simulator) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[35.426178] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[35.427056] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[35.431303] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[35.480033] (-) TimerEvent: {}
+[35.580887] (-) TimerEvent: {}
+[35.599068] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[35.611975] (velodyne_simulator) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[35.612522] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[35.613767] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[35.619482] (velodyne_simulator) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[35.681148] (-) TimerEvent: {}
+[35.781741] (-) TimerEvent: {}
+[35.882430] (-) TimerEvent: {}
+[35.899083] (velodyne_simulator) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[35.982800] (-) TimerEvent: {}
+[36.065862] (velodyne_simulator) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[36.083269] (-) TimerEvent: {}
+[36.174315] (velodyne_simulator) StdoutLine: {'line': b'-- Configuring done\n'}
+[36.181945] (velodyne_simulator) StdoutLine: {'line': b'-- Generating done\n'}
+[36.183436] (velodyne_simulator) StdoutLine: {'line': b'-- Build files have been written to: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_simulator\n'}
+[36.183581] (-) TimerEvent: {}
+[36.191457] (velodyne_simulator) CommandEnded: {'returncode': 0}
+[36.192624] (velodyne_simulator) JobProgress: {'identifier': 'velodyne_simulator', 'progress': 'build'}
+[36.195080] (velodyne_simulator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_simulator', '--', '-j8', '-l8'], 'cwd': '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_simulator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'a'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/a'), ('OLDPWD', '/home/a/deep-rl-navigation'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1737'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'a'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'a'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/a/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/a-virtual-machine:@/tmp/.ICE-unix/1552,unix/a-virtual-machine:/tmp/.ICE-unix/1552'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d7f8e1dd_a74e_4c0f_8943_a9de10838216'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0IJSM2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.267'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_simulator'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble')]), 'shell': False}
+[36.284105] (-) TimerEvent: {}
+[36.287626] (velodyne_simulator) CommandEnded: {'returncode': 0}
+[36.347808] (velodyne_simulator) JobProgress: {'identifier': 'velodyne_simulator', 'progress': 'install'}
+[36.351652] (velodyne_simulator) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_simulator'], 'cwd': '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_simulator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'a'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/a'), ('OLDPWD', '/home/a/deep-rl-navigation'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1737'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'a'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'a'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/a/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/a-virtual-machine:@/tmp/.ICE-unix/1552,unix/a-virtual-machine:/tmp/.ICE-unix/1552'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d7f8e1dd_a74e_4c0f_8943_a9de10838216'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0IJSM2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.267'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/build/velodyne_simulator'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_gazebo_plugins:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_description:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator:/home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/td3:/opt/ros/humble')]), 'shell': False}
+[36.370241] (velodyne_simulator) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[36.370917] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator/share/ament_index/resource_index/package_run_dependencies/velodyne_simulator\n'}
+[36.371365] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator/share/ament_index/resource_index/parent_prefix_path/velodyne_simulator\n'}
+[36.372307] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator/share/velodyne_simulator/environment/ament_prefix_path.sh\n'}
+[36.372586] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator/share/velodyne_simulator/environment/ament_prefix_path.dsv\n'}
+[36.372759] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator/share/velodyne_simulator/environment/path.sh\n'}
+[36.373169] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator/share/velodyne_simulator/environment/path.dsv\n'}
+[36.374214] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator/share/velodyne_simulator/local_setup.bash\n'}
+[36.374629] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator/share/velodyne_simulator/local_setup.sh\n'}
+[36.375019] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator/share/velodyne_simulator/local_setup.zsh\n'}
+[36.375397] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator/share/velodyne_simulator/local_setup.dsv\n'}
+[36.375871] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator/share/velodyne_simulator/package.dsv\n'}
+[36.376343] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator/share/ament_index/resource_index/packages/velodyne_simulator\n'}
+[36.376766] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator/share/velodyne_simulator/cmake/velodyne_simulatorConfig.cmake\n'}
+[36.377350] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator/share/velodyne_simulator/cmake/velodyne_simulatorConfig-version.cmake\n'}
+[36.377730] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/a/deep-rl-navigation/DRL_robot_navigation_ros2/install/velodyne_simulator/share/velodyne_simulator/package.xml\n'}
+[36.380925] (velodyne_simulator) CommandEnded: {'returncode': 0}
+[36.385160] (-) TimerEvent: {}
+[36.471836] (velodyne_simulator) JobEnded: {'identifier': 'velodyne_simulator', 'rc': 0}
+[36.474233] (-) EventReactorShutdown: {}

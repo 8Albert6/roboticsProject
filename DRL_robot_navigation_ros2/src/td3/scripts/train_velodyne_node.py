@@ -204,6 +204,7 @@ class td3(object):
         self.writer.add_scalar("loss", av_loss / iterations, self.iter_count)
         self.writer.add_scalar("Av. Q", av_Q / iterations, self.iter_count)
         self.writer.add_scalar("Max. Q", max_Q, self.iter_count)
+        env.get_logger().info(f"CIAO Giulioo2")
 
     def save(self, filename, directory):
         torch.save(self.actor.state_dict(), "%s/%s_actor.pth" % (directory, filename))
@@ -646,11 +647,11 @@ def evaluate(network, epoch, eval_episodes=10):
     return avg_reward
 
 if __name__ == '__main__':
-
+#INIZIA A ROTEARE A CASO ABBIAMO MODIFICATO EVAL_FREQ E LE CARTELLE DOVE VENGONO SALVATI I FILE
     rclpy.init(args=None)
 
     seed = 0  # Random seed number
-    eval_freq = 5e3  # After how many steps to perform the evaluation
+    eval_freq = 10 #5e3  # After how many steps to perform the evaluation
     max_ep = 500  # maximum number of steps per episode
     eval_ep = 10  # number of episodes for evaluation
     max_timesteps = 5e6  # Maximum number of steps to perform
@@ -666,16 +667,20 @@ if __name__ == '__main__':
     noise_clip = 0.5  # Maximum clamping values of the noise
     policy_freq = 2  # Frequency of Actor network updates
     buffer_size = 1e6  # Maximum size of the buffer
-    file_name = "td3_velodyne"  # name of the file to store the policy
+    file_name = "td3_velodyne_nostro"  # name of the file to store the policy
     save_model = True  # Weather to save the model or not
     load_model = False  # Weather to load a stored model
     random_near_obstacle = True  # To take random actions near obstacles or not
 
+    max_iterations=10
+
     # Create the network storage folders
     if not os.path.exists("./results"):
         os.makedirs("./results")
-    if save_model and not os.path.exists("./pytorch_models"):
-        os.makedirs("./pytorch_models")
+    if save_model and not os.path.exists("./results/pytorch_models"):
+        os.makedirs("./results/pytorch_models")
+    if save_model and not os.path.exists("./results/evaluations"):
+        os.makedirs("./results/evaluations")
 
     # Create the training environment
     environment_dim = 20
@@ -694,7 +699,7 @@ if __name__ == '__main__':
     if load_model:
         try:
             print("Will load existing model.")
-            network.load(file_name, "./pytorch_models")
+            network.load(file_name, "./results/pytorch_models")
         except:
             print("Could not load the stored model parameters, initializing training with random parameters")
 
@@ -748,8 +753,8 @@ if __name__ == '__main__':
                             evaluate(network=network, epoch=epoch, eval_episodes=eval_ep)
                         )
 
-                        network.save(file_name, directory="./DRL_robot_navigation_ros2/src/td3/scripts/pytorch_models")
-                        np.save("./DRL_robot_navigation_ros2/src/td3/scripts/results/%s" % (file_name), evaluations)
+                        network.save(file_name, directory="./results/pytorch_models")
+                        np.save("./results/evaluations/%s" % (file_name), evaluations)
                         epoch += 1
 
                     state = env.reset()
@@ -800,6 +805,8 @@ if __name__ == '__main__':
                 episode_timesteps += 1
                 timestep += 1
                 timesteps_since_eval += 1
+                if network.iter_count>max_iterations:
+                    break
 
     except KeyboardInterrupt:
         pass
