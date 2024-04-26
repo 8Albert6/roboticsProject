@@ -651,7 +651,7 @@ if __name__ == '__main__':
     rclpy.init(args=None)
 
     seed = 0  # Random seed number
-    eval_freq = 5e2 #5e3  # After how many steps to perform the evaluation
+    eval_freq = 3e2 #5e3  # After how many steps to perform the evaluation
     max_ep = 500  # maximum number of steps per episode
     eval_ep = 10  # number of episodes for evaluation
     max_timesteps = 5e6  # Maximum number of steps to perform
