@@ -102,7 +102,7 @@ class td3(object):
         self.critic_optimizer = torch.optim.Adam(self.critic.parameters())
 
         self.max_action = max_action
-        self.writer = SummaryWriter(log_dir="./DRL_robot_navigation_ros2/src/td3/scripts/runs")
+        self.writer = SummaryWriter(log_dir="./src/td3/scripts/runs") #******************** HO TOLTO /DRL_robot_navigation_ros2
         # os.path.dirname(os.path.realpath(__file__)) + "/runs"
         self.iter_count = 0
 
@@ -126,7 +126,7 @@ class td3(object):
         av_Q = 0
         max_Q = -inf
         av_loss = 0
-        for it in range(iterations):
+        for it in range(iterations): #**************** praticamente significa per ogni timestep dell'episodio su cui stiamo facendo il training
             # sample a batch from the replay buffer
             (
                 batch_states,
@@ -170,7 +170,7 @@ class td3(object):
             loss.backward()
             self.critic_optimizer.step()
 
-            if it % policy_freq == 0:
+            if it % policy_freq == 0: #*************************** Aggiornare pesi attore ogni tot che aggiorno critic
                 # Maximize the actor output value by performing gradient descent on negative Q values
                 # (essentially perform gradient ascent)
                 actor_grad, _ = self.critic(state, self.actor(state))
@@ -558,7 +558,9 @@ class GazeboEnv(Node):
             return -100.0
         else:
             r3 = lambda x: 1 - x if x < 1 else 0.0
-            return action[0] / 2 - abs(action[1]) / 2 - r3(min_laser) / 2
+            val=action[0] / 2 - abs(action[1]) / 2 - r3(min_laser) / 2 #******************Velocità lineare - |velocità angolare| - termine che dipende dalla vicinanza ad uno ostacolo (più siamo vicini più questo termine è vicino ad 1 e quindi abbassa la reward)
+            env.get_logger().info("reward " + str(val))
+            return val
 
 class Odom_subscriber(Node):
 
@@ -651,9 +653,8 @@ if __name__ == '__main__':
     rclpy.init(args=None)
 
     seed = 0  # Random seed number
-    eval_freq = 3e2 #5e3  # After how many steps to perform the evaluation
     max_ep = 500  # maximum number of steps per episode
-    eval_ep = 10  # number of episodes for evaluation
+    eval_ep = 1  # number of episodes for evaluation ***********************************************************AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH****
     max_timesteps = 5e6  # Maximum number of steps to perform
     expl_noise = 1  # Initial exploration noise starting value in range [expl_min ... 1]
     expl_decay_steps = (
@@ -672,7 +673,9 @@ if __name__ == '__main__':
     load_model = False  # Weather to load a stored model
     random_near_obstacle = True  # To take random actions near obstacles or not
 
-    max_iterations=10
+    max_iterations=1e3 #*********************insomma numero massimo di iterazioni di training dunque di episodi
+    n_evaluations=3 #******************* how many evaluations to perform
+    eval_freq = math.floor(max_iterations/n_evaluations) # After how many episodes to perform the evaluation
 
     # Create the network storage folders
     if not os.path.exists("./results"):
@@ -707,7 +710,7 @@ if __name__ == '__main__':
     evaluations = []
 
     timestep = 0
-    timesteps_since_eval = 0
+    episodes_since_eval = 0
     episode_num = 0
     done = True
     epoch = 1
@@ -729,12 +732,15 @@ if __name__ == '__main__':
     rate = odom_subscriber.create_rate(2)
     try:
         while rclpy.ok():
-            if timestep < max_timesteps:
-                # On termination of episode
+            
+            if timestep < max_timesteps: #********************* timestep indica quante volte entriamo in questo loop
+                # On termination of episode #********************* i.e. a collision, goal reached or time limit
                 if done:
+                    
                     env.get_logger().info(f"Done. timestep : {timestep}")
-                    if timestep != 0:
-                        env.get_logger().info(f"train")
+                    
+                    if timestep != 0: #************************* At the end of each episode perform training
+                        env.get_logger().info(f"train from episode " + str(episode_num)) #********************* dunque il train si fa solo quando finisce un "episodio"
                         network.train(
                         replay_buffer,
                         episode_timesteps,
@@ -745,15 +751,15 @@ if __name__ == '__main__':
                         noise_clip,
                         policy_freq,
                         )
+                        network.save(file_name, directory="./results/pytorch_models") #********************* Salva qui i parametri piuttosto che durante evaluation
 
-                    if timesteps_since_eval >= eval_freq:
-                        env.get_logger().info("Validating")
-                        timesteps_since_eval %= eval_freq
+                    if episodes_since_eval >= eval_freq:
+                        env.get_logger().info("Validating and saving evaluation of epoch " + str(epoch)) #*********************
+                        episodes_since_eval %= eval_freq
                         evaluations.append(
                             evaluate(network=network, epoch=epoch, eval_episodes=eval_ep)
                         )
-
-                        network.save(file_name, directory="./results/pytorch_models")
+                        #network.save(file_name, directory="./results/pytorch_models") #********************* Un tempo era qua
                         np.save("./results/evaluations/%s" % (file_name), evaluations)
                         epoch += 1
 
@@ -763,12 +769,12 @@ if __name__ == '__main__':
                     episode_reward = 0
                     episode_timesteps = 0
                     episode_num += 1
-
+                    episodes_since_eval += 1
                 # add some exploration noise
                 if expl_noise > expl_min:
                     expl_noise = expl_noise - ((1 - expl_min) / expl_decay_steps)
 
-                action = network.get_action(np.array(state))
+                action = network.get_action(np.array(state)) 
                 action = (action + np.random.normal(0, expl_noise, size=action_dim)).clip(
                      -max_action, max_action
                 )
@@ -792,9 +798,9 @@ if __name__ == '__main__':
 
                 # Update action to fall in range [0,1] for linear velocity and [-1,1] for angular velocity
                 a_in = [(action[0] + 1) / 2, action[1]]
-                next_state, reward, done, target = env.step(a_in)
-                done_bool = 0 if episode_timesteps + 1 == max_ep else int(done)
-                done = 1 if episode_timesteps + 1 == max_ep else int(done)
+                next_state, reward, done, target = env.step(a_in) #**************************Praticamente qui il done diventa vero se si scontra o raggiunge obiettivo
+                done_bool = 0 if episode_timesteps + 1 == max_ep else int(done) #**************** ok allora questa cosa è un po' difficile da spiegare ma seguimi praticamente mi serve per il training questo perché con 1 gli devo dire che si è scontrato o ha raggiunto il goal mentre con 0 che non è successo, mentre done senza _bool in generale mi indica la fine di un episodio quindi anche se è finito il tempo cosa che done_bool non considera
+                done = 1 if episode_timesteps + 1 == max_ep else int(done) #**************************Mentre qui se non si è scontrato ma ha superato il limite di timesteps
                 episode_reward += reward
 
                 # Save the tuple in replay buffer
@@ -804,7 +810,6 @@ if __name__ == '__main__':
                 state = next_state
                 episode_timesteps += 1
                 timestep += 1
-                timesteps_since_eval += 1
                 if network.iter_count>max_iterations:
                     break
 
