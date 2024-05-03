@@ -29,6 +29,10 @@ from std_srvs.srv import Empty
 from visualization_msgs.msg import Marker
 from visualization_msgs.msg import MarkerArray
 
+from gazebo_msgs.srv import GetEntityState
+import subprocess
+import re
+
 GOAL_REACHED_DIST = 0.3
 COLLISION_DIST = 0.35
 TIME_DELTA = 0.2
@@ -39,6 +43,37 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")  # cuda or
 last_odom = None
 environment_dim = 20
 velodyne_data = np.ones(environment_dim) * 10
+
+
+#************************************************* AGGIUNTO DA MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+
+def get_entity_state_client(name):
+     node = rclpy.create_node('get_entity_state_client_node')
+
+     client = node.create_client(GetEntityState, '/demo/get_entity_state')
+     req = GetEntityState.Request()
+     req.name = name
+     req.reference_frame = 'world'
+
+     while not client.wait_for_service(timeout_sec=5.0):
+         node.get_logger().info('service not available, waiting again...')
+     future = client.call_async(req)
+
+     rclpy.spin_until_future_complete(node, future)
+
+     if future.result() is not None:
+         return future.result()
+     else:
+         node.get_logger().info('Service call failed')
+
+     node.destroy_node()
+#**********************************************************************
 
 class Actor(nn.Module):
     def __init__(self, state_dim, action_dim):
@@ -304,7 +339,7 @@ class GazeboEnv(Node):
             last_odom.pose.pose.orientation.z,
         )
         euler = quaternion.to_euler(degrees=False)
-        angle = round(euler[2], 4)
+        angle = round(euler[2], 4) #robot angle with respect to fixed frame rounded up to the fourth decimal digit
 
         # Calculate distance to the goal from the robot
         distance = np.linalg.norm(
@@ -314,22 +349,22 @@ class GazeboEnv(Node):
         # Calculate the relative angle between the robots heading and heading toward the goal
         skew_x = self.goal_x - self.odom_x
         skew_y = self.goal_y - self.odom_y
-        dot = skew_x * 1 + skew_y * 0
+        dot = skew_x * 1 + skew_y * 0 #************************** scalar product between robot heading [1 0] (in its reference frame) and the vector which points from the robot to the goal
         mag1 = math.sqrt(math.pow(skew_x, 2) + math.pow(skew_y, 2))
         mag2 = math.sqrt(math.pow(1, 2) + math.pow(0, 2))
-        beta = math.acos(dot / (mag1 * mag2))
+        beta = math.acos(dot / (mag1 * mag2)) #***************** the angle between robot heading and goal vector obtained from dot_product=mag1*mag2*cos(angle_between)
         if skew_y < 0:
-            if skew_x < 0:
-                beta = -beta
-            else:
+            if skew_x < 0: #****** cioè terzo quadrante
+                beta = -beta 
+            else: #********** cioè quarto quadrante
                 beta = 0 - beta
-        theta = beta - angle
+        theta = beta - angle #****************** PICCHÌ MASSESCEF?
         if theta > np.pi:
             theta = np.pi - theta
-            theta = -np.pi - theta
+            theta = -np.pi - theta #***************PRATICAMENTE THETA=THETA-2*PI
         if theta < -np.pi:
             theta = -np.pi - theta
-            theta = np.pi - theta
+            theta = np.pi - theta #**************** PRATICAMENTE THETA= THETA + 2*PI
 
         # Detect if the goal has been reached and give a large positive reward
         if distance < GOAL_REACHED_DIST:
@@ -559,7 +594,7 @@ class GazeboEnv(Node):
         else:
             r3 = lambda x: 1 - x if x < 1 else 0.0
             val=action[0] / 2 - abs(action[1]) / 2 - r3(min_laser) / 2 #******************Velocità lineare - |velocità angolare| - termine che dipende dalla vicinanza ad uno ostacolo (più siamo vicini più questo termine è vicino ad 1 e quindi abbassa la reward)
-            env.get_logger().info("reward " + str(val))
+            #env.get_logger().info("reward " + str(val))
             return val
 
 class Odom_subscriber(Node):
@@ -595,6 +630,9 @@ class Velodyne_subscriber(Node):
             )
         self.gaps[-1][-1] += 0.03
 
+
+
+
     def velodyne_callback(self, v):
         global velodyne_data
         data = list(pc2.read_points(v, skip_nans=False, field_names=("x", "y", "z")))
@@ -612,14 +650,23 @@ class Velodyne_subscriber(Node):
                         velodyne_data[j] = min(velodyne_data[j], dist)
                         break
 
-def check_pos(x, y):
-    # Check if the random goal position is located on an obstacle and do not accept it if it is
-    goal_ok = False
-    
-    if x > -0.55 and 1.7 > y > -1.7:
-        goal_ok = True
 
-    return goal_ok
+
+obstacles=[] # lista globali di ostacoli così check_pos la può usare senza passargliela
+
+def check_pos(x, y):
+    r=0.57 # raggio del cilindro
+
+
+
+    
+    map_limit_statement= (21 > x > -0.58 and 1.6 > y > -1.6) or (1.6>y>-6.5 and 12.7<x<16.2)
+    statement=map_limit_statement
+    for obstacle in obstacles:
+        statement=statement and (obstacle.x-x)**2 + (obstacle.y-y)**2 > r**2
+        if (not statement): #Non ha senso continuare a fare il for se tanto già è false (False and qualsiasi cosa è false)
+            return False
+    return statement
 
 def evaluate(network, epoch, eval_episodes=10):
     avg_reward = 0.0
@@ -649,8 +696,33 @@ def evaluate(network, epoch, eval_episodes=10):
     return avg_reward
 
 if __name__ == '__main__':
-#INIZIA A ROTEARE A CASO ABBIAMO MODIFICATO EVAL_FREQ E LE CARTELLE DOVE VENGONO SALVATI I FILE
+# TO DO:
+# - AGGIUNGERE TERMINI DI REWARD SULLA DISTANCE E THETA (O BETA, IO LO FAREI SU BETA)
+# - NEL CORSO DEL TRAIN METTERE IL GOAL MANO A MANO PIÙ LONTANO
+# - DIRE AL PROF CHE È GOAL BASED SOLO PERCHÉ LA DISTANZA DAL GOAL E L'ANGOLO RELATIVO LO USA NELLO STATO CIOÈ INGRESSO ALL'ACTOR E CRITIC
+# - NON PENSO CI SIA ALTRO BRO VAI COSÌ
+
     rclpy.init(args=None)
+
+    # ********************************aggiungi i cilindri in una lista
+    x=1
+    y=1
+    name='unit_cylinder'
+    i=-1
+    while (not (x==0 and y==0)):
+        if (i!=-1):
+            name='unit_cylinder_'+str(i)
+        response = get_entity_state_client(name)
+        position_info = re.search(r"position=geometry_msgs\.msg\.Point\(x=(-?\d+\.\d+), y=(-?\d+\.\d+)", str(response.state))
+        if position_info:
+            # Extract x and y values
+            x = float(position_info.group(1))
+            y = float(position_info.group(2))
+        if(not (x==0 and y==0)):
+            obstacles.append(Point(x,y))
+            #env.get_logger().info("*******************************************************" + str(x) + str("*******") + str(y))
+        i+=1
+        #*******************************fine aggiungi cilindri in una lista
 
     seed = 0  # Random seed number
     max_ep = 500  # maximum number of steps per episode
@@ -730,8 +802,18 @@ if __name__ == '__main__':
     executor_thread.start()
     
     rate = odom_subscriber.create_rate(2)
+
+    #*********************************************AGGIUNTO DA MEEEEEEEEEEEEEEEEEEEEEE
+
+    #**********************************************fine AGGIUNTO DA MEEEEEEEEEEEEEEEEEEEE
+
+
+
+
+
     try:
         while rclpy.ok():
+
             
             if timestep < max_timesteps: #********************* timestep indica quante volte entriamo in questo loop
                 # On termination of episode #********************* i.e. a collision, goal reached or time limit
